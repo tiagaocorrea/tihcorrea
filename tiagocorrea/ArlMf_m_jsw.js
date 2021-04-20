@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["nPTdOHt"]); }
+
+__d("StreamIdGenerator",["err"],(function(a,b,c,d,e,f){"use strict";var g=255;a=function(){function a(){this.$1=new Set();for(var a=1;a<=g;++a)this.$1.add(a)}var c=a.prototype;c.getNextStreamId=function(){var a;if(this.$1.size===0)throw b("err")("Max number of stream IDs reached");a=(a=this.$1.values().next().value)!=null?a:0;this.$1["delete"](a);return a};c.putBackStreamId=function(a){this.$1.add(a)};return a}();f.StreamIdGenerator=a}),null);
